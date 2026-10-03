@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+}
+
+.font-race {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.font-data {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom glow and glass effects for arcade theme */
+.hud-glass {
+  background: rgba(15, 23, 42, 0.78);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.speed-glow {
+  text-shadow: 0 0 16px rgba(56, 189, 248, 0.6);
+}
+
+.nitro-glow {
+  text-shadow: 0 0 16px rgba(245, 158, 11, 0.7);
+}
+
+/* Pulse keyframes for power-up HUD alert */
+@keyframes shield-pulse {
+  0%, 100% { box-shadow: 0 0 15px rgba(59, 130, 246, 0.5); }
+  50% { box-shadow: 0 0 25px rgba(59, 130, 246, 0.9); }
+}
+
+.animate-shield-glow {
+  animation: shield-pulse 1.5s infinite;
+}

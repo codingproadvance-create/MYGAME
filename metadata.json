@@ -1,0 +1,7 @@
+{
+  "name": "Advance Speed Racer",
+  "description": "A high-octane 2D canvas vertical highway racing game with responsive controls, traffic dodging, dynamic power-ups, synthesized Web Audio, and mobile touch support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
